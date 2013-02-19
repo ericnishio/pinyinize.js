@@ -61,7 +61,7 @@
 		};
 
 		/**
-		 * Split a phrase into individual terms
+		 * Splits a phrase into individual terms.
 		 * @param {String} phrase Phrase with more than one term
 		 * @return {Array} Individual terms
 		 */
@@ -79,7 +79,7 @@
 		}
 
 		/**
-		 * Match and deconstruct a term
+		 * Matches and deconstructs a term.
 		 * @param {String} term Term
 		 * @return {String} Parts of a term
 		 */
@@ -110,7 +110,7 @@
 		}
 
 		/**
-		 * Reconstruct a term ending
+		 * Reconstructs a term ending.
 		 * @param {String} ending Term ending
 		 * @param {number} tone Tone number
 		 * @return {String} Finalized ending
@@ -216,7 +216,7 @@
 		}
 
 		/**
-		 * Convert a letter into a marked letter
+		 * Converts a letter into a marked letter.
 		 * @param {String} letter Letter + tone number to be converted
 		 * @return {String} Converted letter
 		 */
@@ -321,7 +321,7 @@
 		var textField = this;
 
 		/**
-		 * Perform conversion
+		 * Performs a conversion.
 		 */
 		button.on('click', function () {
 			if (textField.val() !== '') {
