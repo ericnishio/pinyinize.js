@@ -9,6 +9,27 @@
 
 (function ($) {
 	$.fn.PinyinConverter = function (button, options) {
+		/*Defining default options if not set */
+		if(typeof options === 'undefined'){
+			var options = {
+				focusAfterConvert: true,
+				consoleMessages: true,
+				realtimeConvert: false
+			}
+		} else{
+			if(typeof options.focusAfterConvert === 'undefined'){
+				options.focusAfterConvert = true;
+			}
+
+			if(typeof options.consoleMessages === 'undefined'){
+				options.consoleMessages = true;
+			}
+
+			if(typeof options.realtimeConvert === 'undefined'){
+				options.realtimeConvert = false
+			}
+		}
+
 		/**
 		 * Toggle console.log messages
 		 */
@@ -18,6 +39,8 @@
 				oldConsoleLog.apply(this, arguments);
 			}
 		};
+
+		var numbers = [49, 50, 51, 52];
 
 		/**
 		 * Pinyin endings
@@ -323,7 +346,8 @@
 		/**
 		 * Performs a conversion.
 		 */
-		button.on('click', function () {
+
+		function convert() {
 			if (textField.val() !== '') {
 				var userInput = textField.val(); // save text inputted by user
 				textField.val(''); // reset the text field
@@ -372,6 +396,19 @@
 					textField.focus();
 				}
 			}
-		});
+		}
+
+		if(options.realtimeConvert !== true){
+			button.on('click', function(){
+				convert();
+			});
+		} else if(options.realtimeConvert === true){
+			textField.on('keyup', function (e) {
+				var key = e.which;
+				if($.inArray(key, numbers) !== -1){
+					convert();
+				}
+			});
+		}
 	};
 })(jQuery);
