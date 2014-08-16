@@ -7,7 +7,7 @@ Pinyinize.js
 
 Just simply load the *pinyinize.js* or *pinyinize.min.js* file:
 
-```
+```html
 <head>
     ...
     <script src="src/pinyinize.js"></script>
@@ -18,5 +18,5 @@ Just simply load the *pinyinize.js* or *pinyinize.min.js* file:
 ## Usage
 
 ```javascript
-Pinyinize.intoMarks('tai2 wan1');
+Pinyinize.intoMarks('tai2 wan1'); // returns 'tái wān'
 ```
