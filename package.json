@@ -1,0 +1,33 @@
+{
+  "name": "Pinyinize.js",
+  "version": "2.0.0",
+  "description": "A JavaScript tool that converts Hanyu Pinyin tone numbers to tone marks.",
+  "main": "src/pinyinize.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericnishio/pinyinize.js.git"
+  },
+  "keywords": [
+    "chinese",
+    "mandarin",
+    "pinyin",
+    "convert",
+    "kanji",
+    "hanzi",
+    "hanyu"
+  ],
+  "author": "Eric Nishio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericnishio/pinyinize.js/issues"
+  },
+  "homepage": "https://github.com/ericnishio/pinyinize.js",
+  "devDependencies": {
+    "karma": "^0.12.21",
+    "karma-jasmine": "^0.1.5",
+    "karma-chrome-launcher": "^0.1.4"
+  }
+}
