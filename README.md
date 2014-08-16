@@ -1,8 +1,8 @@
-Pinyinize.js 2.0
-================
+Pinyinize.js
+============
 
 ## Usage:
 
 ```
-Pinyinize.intoMarks('tai2 wan1')
+Pinyinize.intoMarks('tai2 wan1');
 ```
