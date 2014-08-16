@@ -1,1 +1,8 @@
-Pinyinize.js 1.0
+Pinyinize.js 2.0
+================
+
+## Usage:
+
+```
+Pinyinize.intoMarks('tai2 wan1')
+```
