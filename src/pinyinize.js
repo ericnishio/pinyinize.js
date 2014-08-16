@@ -1,7 +1,7 @@
 /**
  * Pinyinize.js
- * @author Eric Nishio <https://github.com/ericnishio/pinyinize.js>
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ * @author Eric Nishio <http://ericnish.io>
+ * @license http://opensource.org/licenses/mit-license.php MIT License
  * @version 2.0.0
  */
 (function() {
@@ -105,7 +105,7 @@
 
     /**
      * Splits a phrase into individual terms.
-     * @param {String} phrase Phrase with more than one term
+     * @param {string} phrase Phrase with more than one term
      * @return {Array} Individual terms
      */
     function splitPhrase(phrase) {
@@ -123,8 +123,8 @@
 
     /**
      * Matches and deconstructs a term.
-     * @param {String} term Term
-     * @return {String} Parts of a term
+     * @param {string} term Term
+     * @return {string} Parts of a term
      */
     function matchTerm(term) {
         if (debug) console.log('Matching \'' + term + '\'...');
@@ -162,9 +162,9 @@
 
     /**
      * Reconstructs a term ending.
-     * @param {String} ending Term ending
+     * @param {string} ending Term ending
      * @param {number} tone Tone number
-     * @return {String} Finalized ending
+     * @return {string} Finalized ending
      */
     function reconstructEnding(ending, tone) {
         if (tone !== '' && ending !== '') {
@@ -271,8 +271,8 @@
 
     /**
      * Converts a letter into a marked letter.
-     * @param {String} letter Letter + tone number to be converted
-     * @return {String} Converted letter
+     * @param {string} letter Letter + tone number to be converted
+     * @return {string} Converted letter
      */
     function convertLetter(letter) {
         var convertedLetter;
