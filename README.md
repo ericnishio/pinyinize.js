@@ -20,3 +20,13 @@ Just simply load the *pinyinize.js* or *pinyinize.min.js* file:
 ```javascript
 Pinyinize.intoMarks('tai2 wan1'); // returns 'tái wān'
 ```
+
+## Tests
+
+Install *karma-cli*: `npm install -g karma-cli`
+
+Run the tests:
+
+```
+karma start
+```
