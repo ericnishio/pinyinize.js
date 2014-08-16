@@ -1,1 +1,1 @@
-This is the official repository for PinyinConverter.
+Pinyinize.js 1.0
