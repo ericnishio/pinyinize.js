@@ -8,11 +8,15 @@ Pinyinize.js
 Just simply load the *pinyinize.js* or *pinyinize.min.js* file:
 
 ```
-<script src="src/pinyinize.js"></script>
+<head>
+    ...
+    <script src="src/pinyinize.js"></script>
+    ...
+</head>
 ```
 
 ## Usage
 
-```
+```javascript
 Pinyinize.intoMarks('tai2 wan1');
 ```
