@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pinyinize.js</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="description" content="A JavaScript tool that converts Hanyu Pinyin tone numbers to tone marks."/>
-	<meta name="keywords" content="hanyu pinyin, convert, converter, tone marks, tone numbers, tones, mandarin, chinese, jquery, javascript, html, website, web development"/>
+    <title>Pinyinize.js</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="A JavaScript tool that converts Hanyu Pinyin tone numbers to tone marks."/>
+    <meta name="keywords" content="hanyu pinyin, convert, converter, tone marks, tone numbers, tones, mandarin, chinese, jquery, javascript, html, website, web development"/>
     <script src="../src/pinyinize.js"></script>
 </head>
 <body>
-    <script>
-        (function() {
-            var pinyinWithNumbers = 'tai2 wan1',
+<script>
+    (function() {
+        var pinyinWithNumbers = 'tai2 wan1',
                 pinyinWithMarks = Pinyinize.intoMarks(pinyinWithNumbers);
 
-            document.write('<strong>' + pinyinWithNumbers + '</strong> turns into <strong>' + pinyinWithMarks + '</strong>.');
-        })();
-    </script>
+        document.write('<strong>' + pinyinWithNumbers + '</strong> turns into <strong>' + pinyinWithMarks + '</strong>.');
+    })();
+</script>
 </body>
 </html>
