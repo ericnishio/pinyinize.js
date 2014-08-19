@@ -17,7 +17,7 @@
          * @param {Boolean} debugMode
          * @returns {string}
          */
-        intoMarks: function(pinyinWithNumbers, debugMode) {
+        toMarks: function(pinyinWithNumbers, debugMode) {
             debug = debugMode || false;
 
             var phrases = splitPhrase(pinyinWithNumbers), // create an array comprising the terms
