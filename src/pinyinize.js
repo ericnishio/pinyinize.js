@@ -261,11 +261,13 @@
             }
 
             // TODO: Add better support for -r (e.g. dian3r -> diǎnr)
+
             if (debug) console.log('Created ending \'' + reconstructedEnding + '\'.');
         } else {
             reconstructedEnding = ending;
             if (debug) console.log('Didn\'t create a new ending.');
         }
+
         return reconstructedEnding;
     }
 
