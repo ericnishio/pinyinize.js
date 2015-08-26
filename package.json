@@ -1,7 +1,7 @@
 {
   "name": "pinyinize",
   "version": "3.0.2",
-  "description": "A JavaScript tool that converts Hanyu pinyin tone numbers to tone marks.",
+  "description": "A tool that converts Hanyu pinyin tone numbers to tone marks.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"

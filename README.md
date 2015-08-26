@@ -3,7 +3,7 @@ pinyinize.js
 
 [![Build Status](https://travis-ci.org/ericnishio/pinyinize.js.png)](https://travis-ci.org/ericnishio/pinyinize.js)
 
-A JavaScript tool that converts Hanyu pinyin tone numbers to tone marks.
+A tool that converts Hanyu pinyin tone numbers to tone marks.
 
 ## Setup
 
