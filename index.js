@@ -1,9 +1,9 @@
 var util = require('./lib/util');
 
 /**
- * @param {string} wordsWithToneNumbers
+ * @param {string} phrase
  * @return {string}
  */
-module.exports = function(wordsWithToneNumbers) {
-  return util.convertPhrase(wordsWithToneNumbers);
+module.exports = function(phrase) {
+  return util.tonifyPhrase(phrase);
 };
