@@ -1,9 +1,9 @@
-var util = require('./lib/util');
+var tonify = require('./lib/tonify');
 
 /**
  * @param {string} phrase
  * @return {string}
  */
 module.exports = function(phrase) {
-  return util.tonifyPhrase(phrase);
+  return tonify(phrase);
 };
