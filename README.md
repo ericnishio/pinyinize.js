@@ -1,32 +1,26 @@
-Pinyinize.js
+pinyinize.js
 ============
 
 [![Build Status](https://travis-ci.org/ericnishio/pinyinize.js.png)](https://travis-ci.org/ericnishio/pinyinize.js)
 
+A JavaScript tool that converts Hanyu pinyin tone numbers to tone marks.
+
 ## Setup
 
-Just simply load the *pinyinize.js* or *pinyinize.min.js* file:
-
-```html
-<head>
-    ...
-    <script src="src/pinyinize.js"></script>
-    ...
-</head>
+```
+$ npm install pinyinize --save
 ```
 
 ## Usage
 
 ```javascript
-Pinyinize.toMarks('tai2 wan1'); // returns 'tái wān'
+var pinyinize = require('pinyinize');
+pinyinize('tai2 wan1'); // returns 'tái wān'
 ```
 
 ## Tests
 
-Install *karma-cli*: `npm install -g karma-cli`
-
-Run the tests:
-
 ```
-karma start
+$ sudo npm install -g mocha
+$ mocha
 ```
