@@ -15,6 +15,7 @@ $ npm install pinyinize --save
 
 ```javascript
 var pinyinize = require('pinyinize');
+
 pinyinize('tai2 wan1'); // returns 'tái wān'
 ```
 
