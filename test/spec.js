@@ -190,11 +190,11 @@ describe('pinyinize', function() {
     expect(pinyinize('luo1 luo2 luo3 luo4 luo')).to.equal('luō luó luǒ luò luo');
   });
 
-  it('should colvert lv1 lv2 lv3 lv4 lv', function() {
+  it('should convert lv1 lv2 lv3 lv4 lv', function() {
     expect(pinyinize('lv1 lv2 lv3 lv4 lv')).to.equal('lǖ lǘ lǚ lǜ lü');
   });
 
-  it('should colvert nü1 nü2 nü3 nü4 nü', function() {
+  it('should convert nü1 nü2 nü3 nü4 nü', function() {
     expect(pinyinize('nü1 nü2 nü3 nü4 nü')).to.equal('nǖ nǘ nǚ nǜ nü');
   });
 });
