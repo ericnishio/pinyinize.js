@@ -170,9 +170,13 @@ describe('pinyinize', function() {
     expect(pinyinize('xue1 xue2 xue3 xue4 xue')).to.equal('xuē xué xuě xuè xue');
   });
 
-  // TODO: Test lüe.
+  it('should convert lue1 lue2 lue3 lue4 lue', function() {
+    expect(pinyinize('lue1 lue2 lue3 lue4 lue')).to.equal('lüē lüé lüě lüè lüe');
+  });
 
-  // TODO: Test nüe.
+  it('should convert nue1 nue2 nue3 nue4 nue', function() {
+    expect(pinyinize('nue1 nue2 nue3 nue4 nue')).to.equal('nüē nüé nüě nüè nüe');
+  });
 
   it('should convert dui1 dui2 dui3 dui4 dui', function() {
     expect(pinyinize('dui1 dui2 dui3 dui4 dui')).to.equal('duī duí duǐ duì dui');
