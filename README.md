@@ -16,13 +16,12 @@ $ npm install pinyinize --save
 ```javascript
 var pinyinize = require('pinyinize');
 
-pinyinize('tai2 wan1'); // returns 'tái wān'
+pinyinize('tai2 wan1 bu2 shi4 zhong1 guo2'); // returns 'tái wān bú shì zhōng guó'
 ```
 
 ## Tests
 
 ```
 $ npm install -g mocha
-$ npm install
-$ mocha
+$ npm test
 ```
