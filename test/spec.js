@@ -25,4 +25,8 @@ describe('pinyinize', function() {
   it('should convert ying1 xiong2', function() {
     expect(pinyinize('ying1 xiong2')).to.equal('yīng xióng');
   });
+
+  it('should convert dianr3', function() {
+    expect(pinyinize('dianr3')).to.equal('diǎnr');
+  });
 });
