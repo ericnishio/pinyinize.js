@@ -26,8 +26,6 @@ function tonifyPhrase(phrase) {
  * @return {string}
  */
 function tonifyWord(word) {
-  // TODO: Automatically convert nue to nüe and lue to lüe.
-
   var tone = getTone(word);
   var ending = getEnding(word);
 
