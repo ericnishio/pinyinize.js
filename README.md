@@ -23,5 +23,6 @@ pinyinize('tai2 wan1'); // returns 'tái wān'
 
 ```
 $ npm install -g mocha
+$ npm install
 $ mocha
 ```
