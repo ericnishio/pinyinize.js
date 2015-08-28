@@ -17,7 +17,7 @@ $ npm install pinyinize --save
 ```javascript
 var pinyinize = require('pinyinize');
 
-pinyinize('tai2 wan1 bu2 shi4 zhong1 guo2'); // returns 'tái wān bú shì zhōng guó'
+pinyinize('ma1 ma2 ma3 ma4 ma5 ma'); // returns 'mā má mǎ mà ma ma'
 ```
 
 ## Tests

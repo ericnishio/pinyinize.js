@@ -2,8 +2,8 @@ var expect = require('chai').expect;
 var pinyinize = require('../index');
 
 describe('pinyinize', function() {
-  it('should convert tai2 wan1', function() {
-    expect(pinyinize('tai2 wan1')).to.equal('tái wān');
+  it('should convert ma1 ma2 ma3 ma4 ma5 ma', function() {
+    expect(pinyinize('ma1 ma2 ma3 ma4 ma5 ma')).to.equal('mā má mǎ mà ma ma');
   });
 
   it('should convert wo3 ai4 ni3', function() {
