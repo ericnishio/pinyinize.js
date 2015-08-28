@@ -26,17 +26,48 @@ function tonifyPhrase(phrase) {
  * @return {string}
  */
 function tonifyWord(word) {
+  // TODO: Automatically convert nue to nüe and lue to lüe.
+
   var tone = getTone(word);
+  var ending = getEnding(word);
 
   if (!tone) {
-    return word;
+    return getTonelessFallback(word);
   }
 
-  var ending = getEnding(word);
+  // TODO: Refactor this exception.
+  if (_.includes(['nue', 'lue'], stripToneNumber(word))) {
+    word = word.replace('u', 'ü');
+    ending = ending.replace('u', 'ü');
+  }
+
   var tonifiedEnding = tonifyEnding(ending, tone);
   var tonifiedWord = word.replace(ending, tonifiedEnding);
 
   return stripToneNumber(tonifiedWord);
+}
+
+/**
+ * @param {string} word
+ * @return {string}
+ */
+function getTonelessFallback(word) {
+  switch (word) {
+    case 'lv':
+      return 'lü';
+
+    case 'nv':
+      return 'nü';
+
+    case 'lue':
+      return 'lüe';
+
+    case 'nue':
+      return 'nüe';
+
+    default:
+      return word;
+  }
 }
 
 /**
