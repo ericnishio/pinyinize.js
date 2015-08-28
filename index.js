@@ -2,7 +2,7 @@ var _ = require('lodash');
 var endings = require('./lib/endings');
 var lettersToTonify = require('./lib/letters-to-tonify');
 var toneMap = require('./lib/tone-map');
-var toneNumbers = [1, 2, 3, 4, 5];
+var toneNumbers = [1, 2, 3, 4];
 
 module.exports = tonifyPhrase;
 
