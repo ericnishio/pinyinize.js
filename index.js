@@ -12,11 +12,7 @@ module.exports = tonifyPhrase;
  */
 function tonifyPhrase(phrase) {
   var words = splitPhraseIntoWords(phrase);
-  var tonifiedWords = [];
-
-  _.forEach(words, function(word) {
-    tonifiedWords.push(tonifyWord(word));
-  });
+  var tonifiedWords = words.map(tonifyWord);
 
   return tonifiedWords.join(' ');
 }
@@ -29,7 +25,7 @@ function tonifyWord(word) {
   var tone = getTone(word);
   var ending = getEnding(word);
 
-  if (!tone) {
+  if (!tone || !ending) {
     return getTonelessFallback(word);
   }
 

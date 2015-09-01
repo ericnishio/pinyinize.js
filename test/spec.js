@@ -90,8 +90,8 @@ describe('pinyinize', function() {
     expect(pinyinize('jian1 jian2 jian3 jian4 jian')).to.equal('jiān jián jiǎn jiàn jian');
   });
 
-  it('should convert dianr3', function() {
-    expect(pinyinize('dianr3')).to.equal('diǎnr');
+  it('should convert dianr1 dianr2 dianr3 dianr4 dianr', function() {
+    expect(pinyinize('dianr1 dianr2 dianr3 dianr4 dianr')).to.equal('diānr diánr diǎnr diànr dianr');
   });
 
   it('should convert niang1 niang2 niang3 niang4 niang', function() {
@@ -196,5 +196,9 @@ describe('pinyinize', function() {
 
   it('should convert nü1 nü2 nü3 nü4 nü', function() {
     expect(pinyinize('nü1 nü2 nü3 nü4 nü')).to.equal('nǖ nǘ nǚ nǜ nü');
+  });
+
+  it('should not convert non-pinyin words', function() {
+    expect(pinyinize('foo1 dian2 3')).to.equal('foo1 dián 3');
   });
 });
