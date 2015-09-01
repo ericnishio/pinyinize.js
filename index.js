@@ -46,22 +46,14 @@ function tonifyWord(word) {
  * @return {string}
  */
 function getTonelessFallback(word) {
-  switch (word) {
-    case 'lv':
-      return 'lü';
+  var fallbackIoMap = {
+    lv: 'lü',
+    nv: 'nü',
+    lue: 'lüe',
+    nue: 'nüe'
+  };
 
-    case 'nv':
-      return 'nü';
-
-    case 'lue':
-      return 'lüe';
-
-    case 'nue':
-      return 'nüe';
-
-    default:
-      return word;
-  }
+  return _.get(fallbackIoMap, word, word);
 }
 
 /**
